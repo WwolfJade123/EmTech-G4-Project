@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gototop {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(22, 65, 21, 225);
+  bottom: 40px;
+  right: 50px;
+  border-radius: 50px;
+  z-index: 2;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  border: 2px solid  rgba(22, 65, 21, 225);
+  font-size: 18px;
+  transform: all 1s ease;
+}
+
+.gototop:hover {
+  border: 2px solid  rgba(22, 65, 21, 225);
+  background: none;
+  color:  rgba(22, 65, 21, 225);
+}
+
+/* NAVBAR */
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(22, 65, 21, 225), rgba(22, 65, 21, 0.8), rgba(22, 65, 21, 0.8), rgba(225, 225, 225, 225)), url(/imgs/background-img1.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+nav img {
+  width: 70px;
+  border-radius: 50px;
+}
+
+.nav-link ul {
+  list-style: none;
+}
+
+.nav-link ul li {
+   display: inline-block;
+   position: relative;
+}
+
+.nav-link ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.15s;
+}
+
+.nav-link ul li ul.dropdown li {
+  display: block;
+}
+
+.nav-link ul li ul.dropdown {
+  width: 100%;
+  background-color: rgba(30,73,29,255);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.nav-link ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.155);
+}
+
+.nav-link ul li:hover ul.dropdown {
+  display: block;
+  background-color: rgba(30,73,29,255);
+}
+
+/* HEADER TEXT BOX */
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 70px;
+  width: auto;
+  letter-spacing: 8px;
+  line-height: 70px;
+  margin: auto;
+}
+
+.text-box p {
+  font-size: 18px;
+  font-weight: 200;
+  width: 600px;
+  margin: 10px auto;
+}
+
+.text-box button {
+  padding: 8px 30px;
+  border-radius: 60px;
+  margin-top: 25px;
+  border: 1px solid white;
+  color: rgba(30,73,29,255);
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.text-box button:hover {
+  border: 1px solid white;
+  color: white;
+  background: none;
+}
+
+/* COURSES */
+
+.courses {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
