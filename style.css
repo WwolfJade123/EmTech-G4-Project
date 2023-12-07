@@ -22,7 +22,7 @@
   color: white;
   border: 2px solid  rgba(22, 65, 21, 225);
   font-size: 18px;
-  transform: all 1s ease;
+  transition: 0.15s;
 }
 
 .gototop:hover {
@@ -143,8 +143,81 @@ nav img {
 /* COURSES */
 
 .courses {
-  width: 80%;
+  width: 75%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
+}
+
+.courses h1 {
+  font-size: 50px;
+  color: rgba(22, 65, 21, 225);
+}
+
+.courses-desc {
+  font-size: 15px;
+  width: 700px;
+  margin: 2px auto 30px;
+  font-weight: 300;
+  color: black;
+}
+
+.courses .row, .row-reverse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 35px 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+.courses .row-reverse {
+  display: flex;
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.courses .row:hover, .row-reverse:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.courses .row h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-left: 30px;
+  letter-spacing: 10px;
+}
+
+.courses .row-reverse h2 {
+  margin-right: 30px;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+.courses .row h2 a, .row-reverse h2 a {
+  text-decoration: none;
+  color: rgba(22, 65, 21, 225) ;
+  text-align: center;
+}
+
+.courses .row h2 a:hover, .row-reverse h2 a:hover {
+  text-decoration: underline;
+}
+
+.courses .row p {
+  width: 600px;
+  padding-right: 30px;
+  margin-left: -40px;
+}
+
+.row-reverse p {
+  width: 600px;
+  padding-left: 30px;
+  margin-right: -40px;
 }
